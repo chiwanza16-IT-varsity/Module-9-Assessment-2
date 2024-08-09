@@ -1,0 +1,97 @@
+body {
+    background-color:hsla(234,91%,13%,1);
+    background-image:
+        radial-gradient(at 51% 51%, hsla(279,93%,62%,1) 0px, transparent 50%),
+        radial-gradient(at 6% 93%, hsla(202,92%,55%,1) 0px, transparent 50%),
+        radial-gradient(at 51% 65%, hsla(221,92%,55%,1) 0px, transparent 50%),
+        radial-gradient(at 88% 85%, hsla(240,92%,55%,1) 0px, transparent 50%);
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#local {
+    font-weight: bold;
+    width: 30%;
+    margin: 50px auto;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#output {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.city-card {
+   
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+
+.city-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    color: #eedbdb;
+}
+
+.city-time {
+    font-size: 24px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.city-flag {
+    width: 90px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 2560px) {
+    #output {
+        margin: 0 100px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+}
+
+@media only screen and (max-width: 980px) {
+    #output {
+        margin: 0 50px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #local {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #output {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
